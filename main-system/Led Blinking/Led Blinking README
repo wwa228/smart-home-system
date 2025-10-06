@@ -1,0 +1,12 @@
+NAME: WIESMES WOZAWOEYEMENA ANTWI
+DATE: 09/18/2024.
+This lab aims to help us understand how microcontrollers interact with the real world: Digital Input and Output. We studied how to toggle the microprocessor for the two LED’s: Red and Green. 
+RED LIGHT TOGGLING : This shows how the red light blinks on when we press the push button for it. The libraries included are #include <msp430.h> The pin number for Red LED (P1.0):
+Toggles on/off each time Button 1 (P4.1) is pressed. The button (P1.0) is the input and button 1 (P4.1) is the output
+GREEN LIGHT TOGGLING: This shows how the green light blinks on when we press the push button for it. The libraries included are #include <msp430.h> The pin number for Green LED (P6.6):
+Toggles on/off each time Button 1 (P2.3) is pressed. The button (P6.6) is the input and button 1 (P2.3) is the output.
+To ensure the proper running of the code,
+The appropriate pins (P1.0 for the red LED, P6.6 for the green LED, P4.1 for Button 1, and P2.3 for Button 2) are wired correctly.
+GPIO_DRIVER.c: The source file writes provides the code for interacting with and controlling the GPIO pins of the MSP430. The libraries involved are #include <msp430.h>
+GPIO_DRIVER.h: The header file is used for declaring the functions without properly defining the function. The functions gpioInitIn() and gpioInitOut() shows how to configure the intialization of the pins.
+GPIO_DRIVER_MAIN.c: This file is used for calling the function declared and defined in the header and source file.The libraries involved are #include <msp430.h>
